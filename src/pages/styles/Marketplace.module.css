@@ -1,0 +1,15 @@
+.marketplace {
+  padding: 40px;
+  text-align: center;
+  background: url('/images/market.png') no-repeat center center;
+  background-size: cover;
+  color: var(--text-light);
+}
+
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background: var(--background-dark);
+}

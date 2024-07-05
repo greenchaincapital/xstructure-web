@@ -1,4 +1,6 @@
 import styles from './styles/Home.module.css';
+import { FaDollarSign, FaSolarPanel, FaLock } from 'react-icons/fa';
+import { GiSouthAfricaFlag } from "react-icons/gi";
 
 const Home = () => {
   return (
@@ -7,9 +9,9 @@ const Home = () => {
       <header className={styles.header}>
       <img src="/images/logo.png" alt="XStructure Logo" className={styles.logo} />
         <nav className={styles.nav}>
+        <a href="#products">Smart Contracts</a>
           <a href="#features">Features</a>
-          <a href="#how-it-works">How It Works</a>
-          <a href="#greenbond-treasury">GreenBond</a>
+          <a href="/docs/overview">Docs</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -21,60 +23,65 @@ const Home = () => {
         <button onClick={() => window.location.href = '/marketplace'}>Explore Marketplace</button>
       </section>
 
+      {/* Core Products */}
+      <section id="products" className={styles.products}>
+          <h2>Smart Contracts</h2>
+          <div className={styles.productCards}>
+              {/* Green Bond */}
+              <div className={styles.card} style={{ backgroundImage: 'url(/images/bond.png)' }}>
+                  <h3>Green Bond</h3>
+                  <p>Invest in renewable energy projects fund to receive stable yields over time.</p>
+                  <a href="https://greenchain.capital"><button className={styles.learnMore}>Learn More</button></a>
+              </div>
+
+              {/* NFT Fractional Ownership */}
+              <div className={styles.card} style={{ backgroundImage: 'url(/images/fraction2.png)' }}>
+                  <h3>NFT Fractional Ownership</h3>
+                  <p>Own shares of solar projects and earn rental income each month.</p>
+                  <a href="/marketplace"><button className={styles.learnMore}>Learn More</button></a>
+              </div>
+
+              {/* Basket Treasury Portfolio */}
+              <div className={styles.card} style={{ backgroundImage: 'url(/images/treasure.png)' }}>
+                  <h3>Basket Treasury Portfolio</h3>
+                  <p>Diversified investment in multiple green assets.</p>
+                  <a href="/docs/treasury"><button className={styles.learnMore}>Learn More</button></a>
+              </div>
+
+              {/* Governance Tokens */}
+              <div className={styles.card} style={{ backgroundImage: 'url(/images/gov.png)' }}>
+                  <h3>Governance Tokens</h3>
+                  <p>Participate in the decision-making of XStructure.</p>
+                  <a href="/docs/gov"><button className={styles.learnMore}>Learn More</button></a>
+              </div>
+          </div>
+      </section>
+
       {/* Features Section */}
       <section id="features" className={styles.features}>
         <h2>Features</h2>
         <div className={styles.featureList}>
           <div className={`${styles.feature} ${styles.feature1}`}>
+            <FaSolarPanel className={styles.icon} />
             <h3>Fractional Ownership</h3>
             <p>Invest in renewable energy projects through fractional NFTs.</p>
+            
           </div>
           <div className={`${styles.feature} ${styles.feature2}`}>
+            <FaDollarSign className={styles.icon} />
             <h3>Revenue Sharing</h3>
             <p>Earn rental income from energy projects directly to your wallet.</p>
           </div>
           <div className={`${styles.feature} ${styles.feature3}`}>
+            <FaLock className={styles.icon} />
             <h3>Transparent and Secure</h3>
             <p>Blockchain technology ensures transparent and secure transactions.</p>
           </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section id="how-it-works" className={styles.howItWorks}>
-        <h2>How It Works</h2>
-        <div className={styles.steps}>
-          <div className={`${styles.step} ${styles.step1}`}>
-            <h3>1. Explore</h3>
-            <p>Browse available green energy projects.</p>
+          <div className={`${styles.feature} ${styles.feature3}`}>
+            <GiSouthAfricaFlag className={styles.icon} />
+            <h3>Tax Rebate</h3>
+            <p>South African investors can receive 125% tax rebate for their invesment.</p>
           </div>
-          <div className={`${styles.step} ${styles.step2}`}>
-            <h3>2. Invest</h3>
-            <p>Purchase fractional NFTs to invest in projects.</p>
-          </div>
-          <div className={`${styles.step} ${styles.step3}`}>
-            <h3>3. Earn</h3>
-            <p>Receive rental income from your investments.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="greenbond-treasury" className={styles.greenBondTreasury}>
-      <h2>GreenBond</h2>
-      
-      <div className={styles.steps}>
-      <a href="https://greenchain.capital" target="_blank">
-        <div className={`${styles.greenBond} ${styles.contractSection}`}>
-          <h2>GreenBond Contract</h2>
-          <p>Crowdsourced investments into green energy projects offer secure and predictable returns.</p>
-        </div>
-        </a>
-        <a href="https://beta.velvet.capital/#/fund/manage/0xb8a4cf99dd0f6c50fa039630d2e470efa6167813" target="_blank">
-        <div className={`${styles.balancedTreasury} ${styles.contractSection}`}>
-          <h2>Treasury Contract</h2>
-          <p>Diverse range of assets to provide stable returns and support long-term growth.</p>
-        </div>
-        </a>
         </div>
       </section>
 

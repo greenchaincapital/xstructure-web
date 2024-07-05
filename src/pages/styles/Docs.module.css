@@ -1,0 +1,82 @@
+.docsPage {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    height: auto;
+    -webkit-text-stroke: 0px black;
+    background-size: cover;
+}
+
+.docsContainer {
+    padding: 2rem;
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+    margin-left: 20%;
+    line-height: 1.6;
+    /* font-family: Arial, sans-serif; */
+    background-color: var(--background-dark);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.docsContainer img {
+    max-width: 800px;
+}
+
+.docsContainer h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    /* color: #333; */
+}
+
+.docsContainer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    /* color: #555; */
+}
+
+.docsContainer p {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    /* color: #666; */
+}
+
+.docsContainer ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.docsContainer a {
+    /* color: #0070f3; */
+    text-decoration: underline;
+}
+
+.docsSidebar {
+    padding: 1rem;
+    background: var(--background-dark);
+    /* border-right: 1px solid #ddd; */
+    border-radius: 8px;
+    width:20%;
+    float: left;
+    /* margin-right: 1rem; */
+}
+
+.docsSidebar h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    /* color: #333; */
+}
+
+.docsSidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.docsSidebar li {
+    margin-bottom: 0.5rem;
+}
+
+.docsSidebar a {
+    text-decoration: none;
+    color: #0070f3;
+    font-size: 1.125rem;
+}

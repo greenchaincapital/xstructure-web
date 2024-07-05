@@ -4,8 +4,8 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Green Energy NFT Marketplace" />
+        <link rel="icon" href="/images/logo.png" />
+        <meta name="description" content="Decentralised Green Energy Marketplace" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>XStructure</title>
       </Head>

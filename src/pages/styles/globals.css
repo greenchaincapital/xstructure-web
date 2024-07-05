@@ -4,7 +4,7 @@
   --text-light: #ffffff;
   --text-dark: #333;
   --background-light: rgba(186, 184, 184, 0.8);
-  --background-dark: rgba(34, 34, 34, 0.8);
+  --background-dark: rgba(4, 3, 3, 0.874);
 }
 
 body {
@@ -13,8 +13,8 @@ body {
     box-sizing: border-box;
     /* font-family: 'Arial', sans-serif; */
     font-family: 'Verdana', sans-serif;     
-    -webkit-text-stroke: 1px black;
-    font-weight: bold;
+    
+    /* font-weight: bold; */
   }
   
   a {

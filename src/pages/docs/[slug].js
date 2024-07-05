@@ -1,6 +1,6 @@
 import DocsSidebar from '../../components/DocsSidebar';
 import DocsRenderer, { getStaticProps, getStaticPaths } from '../../components/DocsRenderer';
-import styles from '../styles/Docs.module.css';
+import styles from '../../styles/Docs.module.css';
 
 const DocPage = (props) => {
     return (
@@ -13,3 +13,4 @@ const DocPage = (props) => {
 
 export { getStaticPaths, getStaticProps };
 export default DocPage;
+

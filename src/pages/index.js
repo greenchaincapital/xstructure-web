@@ -1,4 +1,4 @@
-import styles from './styles/Home.module.css';
+import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import { FaDollarSign, FaSolarPanel, FaLock } from 'react-icons/fa';
 import { GiSouthAfricaFlag } from "react-icons/gi";

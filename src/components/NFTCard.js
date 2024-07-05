@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './NFTCard.module.css';
+import styles from '../styles/NFTCard.module.css';
 
 const NFTCard = ({ metadata, onBuy }) => {
   if (!metadata) {

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getTokenMetadata } from '../utils/contract';
 import NFTCard from '../components/NFTCard';
-import styles from './styles/Marketplace.module.css';
+import styles from '../styles/Marketplace.module.css';
 
 const Marketplace = () => {
   const [projects, setProjects] = useState([]);

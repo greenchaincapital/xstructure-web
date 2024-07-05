@@ -4,7 +4,7 @@ import styles from '../pages/styles/Docs.module.css';
 const DocsSidebar = () => {
     return (
         <div className={styles.docsSidebar}>
-            <a href="/"><img class="logo" src="/images/logo.png" /></a>
+            <Link href="/"><img class="logo" src="/images/logo.png" /></Link>
             <h2>Documentation</h2>
             <ul>
                 <li><Link href="/docs/overview">Overview</Link></li>

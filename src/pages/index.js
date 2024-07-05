@@ -1,4 +1,5 @@
 import styles from './styles/Home.module.css';
+import Link from 'next/link';
 import { FaDollarSign, FaSolarPanel, FaLock } from 'react-icons/fa';
 import { GiSouthAfricaFlag } from "react-icons/gi";
 
@@ -9,10 +10,10 @@ const Home = () => {
       <header className={styles.header}>
       <img src="/images/logo.png" alt="XStructure Logo" className={styles.logo} />
         <nav className={styles.nav}>
-        <a href="#products">Smart Contracts</a>
-          <a href="#features">Features</a>
-          <a href="/docs/overview">Docs</a>
-          <a href="#contact">Contact</a>
+        <Link href="#products">Smart Contracts</Link>
+          <Link href="#features">Features</Link>
+          <Link href="/docs/overview">Docs</Link>
+          <Link href="#contact">Contact</Link>
         </nav>
       </header>
 
@@ -31,28 +32,28 @@ const Home = () => {
               <div className={styles.card} style={{ backgroundImage: 'url(/images/bond.png)' }}>
                   <h3>Green Bond</h3>
                   <p>Invest in renewable energy projects fund to receive stable yields over time.</p>
-                  <a href="https://greenchain.capital"><button className={styles.learnMore}>Learn More</button></a>
+                  <Link href="https://greenchain.capital"><button className={styles.learnMore}>Learn More</button></Link>
               </div>
 
               {/* NFT Fractional Ownership */}
               <div className={styles.card} style={{ backgroundImage: 'url(/images/fraction2.png)' }}>
                   <h3>NFT Fractional Ownership</h3>
                   <p>Own shares of solar projects and earn rental income each month.</p>
-                  <a href="/marketplace"><button className={styles.learnMore}>Learn More</button></a>
+                  <Link href="/marketplace"><button className={styles.learnMore}>Learn More</button></Link>
               </div>
 
               {/* Basket Treasury Portfolio */}
               <div className={styles.card} style={{ backgroundImage: 'url(/images/treasure.png)' }}>
                   <h3>Basket Treasury Portfolio</h3>
                   <p>Diversified investment in multiple green assets.</p>
-                  <a href="/docs/treasury"><button className={styles.learnMore}>Learn More</button></a>
+                  <Link href="/docs/treasury"><button className={styles.learnMore}>Learn More</button></Link>
               </div>
 
               {/* Governance Tokens */}
               <div className={styles.card} style={{ backgroundImage: 'url(/images/gov.png)' }}>
                   <h3>Governance Tokens</h3>
                   <p>Participate in the decision-making of XStructure.</p>
-                  <a href="/docs/gov"><button className={styles.learnMore}>Learn More</button></a>
+                  <Link href="/docs/gov"><button className={styles.learnMore}>Learn More</button></Link>
               </div>
           </div>
       </section>
